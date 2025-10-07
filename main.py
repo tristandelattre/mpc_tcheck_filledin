@@ -45,7 +45,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             launch_tchek_process(url, information)
             print("Processus Tchek terminé avec succès")
 
-            # Envoi de la réponse avec le numéro de facture
+            # Envoi de la réponse
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
